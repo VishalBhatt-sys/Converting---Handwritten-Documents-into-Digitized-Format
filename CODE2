@@ -85,12 +85,12 @@ def write_text(formatted_text):
         csv.writer(file, delimiter=" ").writerows(formatted_text)
 
 if __name__ == "__main__":
-    display = cv2.imread(r"C:\Users\ancha\Desktop\deep learning 6th sem mini project\check images\1.jpeg")
+    display = cv2.imread(r"C:\Users\vishal\Desktop\AI 3rd sem\check images\1.jpeg")
     cv2.imshow('Used image', display)
     cv2.waitKey()
     cv2.destroyAllWindows()
     
-    gray_image= cv2.cvtColor(cv2.imread(r"C:\Users\ancha\Desktop\deep learning 6th sem mini project\check images\1.jpeg"), cv2.COLOR_BGR2GRAY)
+    gray_image= cv2.cvtColor(cv2.imread(r"C:\Users\vishal\Desktop\AI 3rd sem\check images\1.jpeg"), cv2.COLOR_BGR2GRAY)
  
     # using thresholding technique
     threshold_img = cv2.threshold(gray_image, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
